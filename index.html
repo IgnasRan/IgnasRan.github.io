@@ -1,40 +1,90 @@
 <!DOCTYPE html>
-<html lang="lt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="informacija">
     <title>Laboratorinis darbas</title>
     <!-- Ignas Ranonis EAf-23 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Ignas Ranonis EAf-23</h1>
-    <h1>Apie</h1>
-    <ul>
-        <li>2 kurso automatikos studentas Vilnius TECH universitete</li>
-        <li>pastatų dažytojas įmonėje “...”</li>
-        <li>pagalbinis darbuotojas įmonėje “...” </li>
-        <li>Elektrikas įmonėje "..."</li>
-    </ul>
-    <h1>Aprašymas</h1>
-        <p>Esu motyvuotas ir siekiantis gilinti savo žinias elektros inžinerijos, automatikos kryptyje.
-            Nuolat siekiu gilinti savo žinias šioje srityje ir tobulėti visokeriopai.
-        </p>
-    <h1>Atlikti darbai</h1>
-        <p>Sukurta mašinėlė - robotas</p>
-        <img width="500" src="Nuotraukos/1640608_e9cf_7.jpg" alt="mašinėlė">
-    <h1>Paslaugos</h1>
-    <video width="480" height="360" controls>
-        <source src="Video/Dustbin.mp4" type="video/mp4">
-    </video>
-    <iframe src="https://www.youtube.com/embed/lkFejnE_6Mo?rel=0" title="Dustbin"></iframe>
-    <audio controls>
-        <source src="Audio/Dustbin.mp3" type="audio/mp3">
-    </audio>
-    
-    <footer>
-        <button id="theme-toggle">Dark/Light Theme</button>
-    </footer>
-    <script src="functions.js"></script>
+    <header class="header">
+        <div class="logo">
+            <img src="Nuotraukos/profile.png" alt="Logo" class="logo-img">
+            <h1>Profilio svetainė</h1>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#contact">Kontaktai</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="Nuotraukos/profile.png" alt="Profile Picture" class="profile-img">
+                <h2>Ignas Ranonis</h2>
+                <p>Studentas</p>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#apie"><i class="fa fa-home"></i> Apie</a></li>
+                    <li><a href="#aprašymas"><i class="fa fa-user"></i> Aprašymas</a></li>
+                    <li><a href="#atlikti_darbai"><i class="fa fa-file"></i> Atlikti darbai</a></li>
+                    <li><a href="#paslaugos"><i class="fa fa-cogs"></i> Paslaugos</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <section id="apie" class="main-section">
+                <h2>Ignas Ranonis EAf-23</h2>
+                <p>Esu studentas</p>
+            </section>
+            <section id="aprašymas">
+                <h2>Aprašymas</h2>
+                <p>2 kurso automatikos studentas Vilnius TECH universitete</p>
+                <p>pastatų dažytojas įmonėje “...”</p>
+                <p>pagalbinis darbuotojas įmonėje “...” </p>
+                <p>Elektrikas įmonėje "..."</p>
+            </section>
+            <section id="atlikti_darbai">
+                <h2>Atlikti darbai</h2>
+                <p>Sukurta mašinėlė - robotas</p>
+                <img width="500" src="Nuotraukos/1640608_e9cf_7.jpg" alt="mašinėlė">
+            </section>
+            <section id="paslaugos">
+                <h2>Paslaugos</h2>
+                <video width="480" height="360" controls>
+                    <source src="Video/Dustbin.mp4" type="video/mp4">
+                </video>
+                <iframe src="https://www.youtube.com/embed/lkFejnE_6Mo?rel=0" title="Dustbin"></iframe>
+                <audio controls>
+                    <source src="Audio/Dustbin.mp3" type="audio/mp3">
+                </audio>
+            </section>
+            <footer id="contact">
+                <button id="theme-toggle">Dark/Light Theme</button>
+                <p>Ignas Ranonis EAf-23</p>
+                
+                <div class="contacts">
+                    <p>Email: <a href="mailto:ir@example.com">ir@example.com</a></p>
+                    <p>Phone: +123 456 78910</p>
+                </div>
+                
+                <div class="social-icons">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-skype"></a>
+                </div>
+            </footer>
+            <script src="functions.js"></script>
+            <button id="AtgalIVirsu" title="Atgal į viršų">↑</button>
+            <script src="AtgalIVirsu.js"></script>
+        </main>
+    </div>
 </body>
 </html>
