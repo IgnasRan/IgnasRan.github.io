@@ -7,6 +7,9 @@
     <!-- Ignas Ranonis EAf-23 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="module" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <header class="header">
@@ -49,18 +52,22 @@
                 <p>pastatų dažytojas įmonėje “...”</p>
                 <p>pagalbinis darbuotojas įmonėje “...” </p>
                 <p>Elektrikas įmonėje "..."</p>
+                <object data="Nuotraukos/undraw_houses_re_uaq7.svg" width ="1000" height="500"></object>
             </section>
             <section id="atlikti_darbai">
                 <h2>Atlikti darbai</h2>
                 <p>Sukurta mašinėlė - robotas</p>
                 <img width="500" src="Nuotraukos/1640608_e9cf_7.jpg" alt="mašinėlė">
+                <div class="formule">
+                    $$f(a) = \frac{1}{2\pi i} \oint \frac{f(z)}{z-a} dz$$
+                </div>
             </section>
             <section id="paslaugos">
                 <h2>Paslaugos</h2>
+                <iframe src="https://www.youtube.com/embed/lkFejnE_6Mo?rel=0" title="Dustbin"></iframe>
                 <video width="480" height="360" controls>
                     <source src="Video/Dustbin.mp4" type="video/mp4">
                 </video>
-                <iframe src="https://www.youtube.com/embed/lkFejnE_6Mo?rel=0" title="Dustbin"></iframe>
                 <audio controls>
                     <source src="Audio/Dustbin.mp3" type="audio/mp3">
                 </audio>
@@ -80,10 +87,12 @@
                     <a href="#" class="fa fa-linkedin"></a>
                     <a href="#" class="fa fa-skype"></a>
                 </div>
+                <div id="clock">00:00:00</div>
             </footer>
             <script src="functions.js"></script>
             <button id="AtgalIVirsu" title="Atgal į viršų">↑</button>
             <script src="AtgalIVirsu.js"></script>
+            <script src="clock.js"></script>
         </main>
     </div>
 </body>

@@ -245,3 +245,8 @@ footer p {
 #AtgalIVirsu:hover {
     background-color: #0056b3;
 }
+#clock {
+    font-size: 2em;
+    margin-top: 20px;
+    color: #ffffff;
+}
